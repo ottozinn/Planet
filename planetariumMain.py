@@ -1,5 +1,10 @@
-from planet import Planet
+from planetarium import Planetarium
 
-earth = Planet("Earth", 1000, 100, "Blue")
+p = Planetarium()
 
-print(str(earth))
+planetChoice = '-1'
+
+while(planetChoice != '0'):
+    planetChoice = str(input("Which planet (0 to quit)? "))
+    p.printOne(planetChoice)
+    
